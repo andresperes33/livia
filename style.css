@@ -267,8 +267,8 @@ nav {
 }
 
 .phone-mockup {
-    max-width: 450px;
-    /* Reduzido de 600px para 450px conforme pedido */
+    max-width: 320px;
+    /* Reduzido de 450px para 320px conforme pedido */
     width: 100%;
     background: #0b0c0d;
     border-radius: 24px;
