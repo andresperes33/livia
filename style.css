@@ -267,8 +267,8 @@ nav {
 }
 
 .phone-mockup {
-    max-width: 600px;
-    /* Maior flexibilidade para diferentes formatos de vídeo */
+    max-width: 450px;
+    /* Reduzido de 600px para 450px conforme pedido */
     width: 100%;
     background: #0b0c0d;
     border-radius: 24px;
@@ -322,7 +322,59 @@ nav {
     margin-bottom: 0.3rem;
 }
 
+/* Video Showcase Section */
+.video-showcase {
+    padding: 8rem 0;
+    background: radial-gradient(circle at bottom left, var(--secondary), var(--secondary-dark));
+}
+
+.premium-player-wrapper {
+    position: relative;
+    max-width: 700px;
+    /* Reduzido de 900px para 700px conforme pedido */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(82, 196, 185, 0.15) 0%, transparent 70%);
+    z-index: 0;
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+.video-container-premium {
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    overflow: hidden;
+    background: #000;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), 0 0 20px rgba(82, 196, 185, 0.1);
+    transition: var(--transition);
+}
+
+.video-container-premium:hover {
+    transform: scale(1.02);
+    border-color: var(--primary);
+    box-shadow: 0 50px 120px rgba(0, 0, 0, 0.7), 0 0 30px rgba(82, 196, 185, 0.2);
+}
+
+.video-container-premium video {
+    width: 100%;
+    max-height: 85vh;
+    display: block;
+    object-fit: contain;
+}
+
 /* Benefits Section */
+
 .benefits {
     padding: 8rem 0;
     background: var(--secondary);

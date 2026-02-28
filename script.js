@@ -37,7 +37,7 @@ const revealOnScroll = new IntersectionObserver((entries, observer) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.benefit-card, .tool-tag, .hero-content, .hero-image, .demo-content, .demo-visual').forEach(el => {
+document.querySelectorAll('.benefit-card, .tool-tag, .hero-content, .hero-image, .demo-content, .demo-visual, .video-container-premium, .section-header').forEach(el => {
     el.classList.add('reveal-hidden');
     revealOnScroll.observe(el);
 });
